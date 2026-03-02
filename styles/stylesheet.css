@@ -31,7 +31,18 @@ main {
     width: 100px;
     height: auto;
     margin: 40px o;
+    animation: spin 4s linear infinite;
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 .details {
     font-family: "Special Elite", system-ui;
@@ -47,7 +58,12 @@ main {
 }
 
 .hat {
-    width: 100px;
+    width: 300px;
     height: auto;
     margin-top: 60px;
+    transition: scale(1.1);
+}
+
+.hat:hover {
+    transform: scale(1.1);
 }
