@@ -28,7 +28,7 @@ main {
 }
 
 .lasso {
-    width: 50px;
+    width: 100px;
     height: auto;
     margin: 40px o;
 }
@@ -43,10 +43,11 @@ main {
     font-family: "Rock Salt", cursive;
     font-size: 22px;
     color: turquoise;
+    text-shadow: 0 0 10px rgb(white);
 }
 
 .hat {
-    width: 60px;
+    width: 100px;
     height: auto;
     margin-top: 60px;
 }
