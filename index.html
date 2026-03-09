@@ -8,11 +8,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rock+Salt&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="normalize.css" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/stylesheet.css">
 <title>Birthday Invitation</title>
 </head>
 
 <body>
+
+<!--BACKGROUND-->
     <svg class="background" viewBox="0 0 750 500" xmlns="http://www.w3.org/2000/svg"><g id="BACKGROUND">
 	<radialGradient id="SVGID_1_" cx="452.6141" cy="406.0826" r="539.9751" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#F5C2B8"/>
@@ -660,6 +663,8 @@
 </svg>
 
     <main>
+
+<!--INFO-->
         <div class="info-container">
 
             <h1 class="title animate__animated animate__rubberBand">Yeehaw! You're Invited!</h1>
@@ -675,6 +680,7 @@
             3PM 'till dawn
             </p>
 
+<!--SIGN OFF-->
             <p class="signoff">
                 Grab your boots and
                 we'll see y'all at high noon!
@@ -683,5 +689,36 @@
 
         <img src="images/cowgirl.hat.svg" class="hat animate__animated animate__tada" alt="cowgirl hat">
 
+<!--RSVP-->
+		<div class="rsvp-section">
+
+		<h2>RSVP</h2>
+
+		<div class="rsvp-options">
+
+<!--YES OPTION-->
+        <div class="rsvp-choice">
+
+		<svg class="check-svg" width="120" height="120" viewbox="0 0 240 240" fill="none" xmins="http://www.w3.org/2000/svg">
+            <circle class="check-circle" cx="110" cy="110" r="100" stroke-width="20" />
+            <polyline class="check-mark" points="70,120 100, 165 150,80" stroke-width="20" stroke-linecap="round"  stroke-linejoin="round" />
+        </svg>
+
+            <p>Ridin' In!</p>
+        </div>
+
+<!--NO OPTION-->
+		<div class="rsvp-choice">
+
+        <svg class="delete-svg" width="120" height="120" viewbox="0 0 240 240" xmins="http://www.w3.org/200/svg">
+            <circle class="delete-circle" cx="110" cy="110" r="100" />
+            <line class="delete-line" x1="60" y1="60" x2="160" y2="160" stroke-width="10" stroke-linecap="butt"/>
+            <line class="delete-line" x1="160" y1="60" x2="60" y2="160" stroke-width="10" stroke-linecap="butt"/>
+        </svg>
+
+			<p>Can't Make It</p>
+		</div>
+		</div>
+		</div>
     </main>
 </body>

@@ -53,8 +53,8 @@ main {
 .signoff {
     font-family: "Rock Salt", cursive;
     font-size: 22px;
-    color: black;
-    text-shadow: 0 0 10px rgb(white);
+    color:black;
+    text-shadow: 10 10 30px white;
 }
 
 .hat {
@@ -66,4 +66,58 @@ main {
 
 .hat:hover {
     transform: scale(1.1);
+}
+
+svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+svg:hover {
+    transform: scale (1.05) ;
+}
+
+.rsvp-options{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+}
+
+.check-circle{
+fill:white;
+stroke:rgb(255, 7, 181);
+stroke-width:20;
+}
+
+.check-mark{
+fill:none;
+stroke:rgb(255, 7, 181);
+stroke-width:20;
+stroke-linecap:round;
+stroke-linejoin:round;
+}
+
+.delete-circle{
+    fill:rgb(255, 7, 181);
+}
+
+.delete-line{
+    stroke:white;
+    stroke-width: 20;
+    stroke-linecap: round;
+}
+
+.rsvp-choice svg{
+    width: 80px;
+    height: auto;
+}
+
+.rsvp-choice svg:hover{
+    transform: scale(1.1);
+    transition: o.3s;
+    cursor:pointer;
+}
+
+.rsvp-choice p{
+    color: white;
 }
